@@ -1,0 +1,89 @@
+.player-info {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  width: 100%;
+}
+
+.player-info div {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+}
+
+.player-info div span {
+  font-size: xx-large;
+}
+
+#reset {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 12px;
+  background-color: rgb(185, 184, 184);
+  border: none;
+  border-radius: 8px;
+  transition: 0.5s background-color ease-in-out;
+}
+
+#reset:hover {
+  background-color: rgb(199, 55, 55);
+}
+
+section {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0;
+  padding: 15px;
+}
+
+section .row {
+  display: flexbox;
+  position: relative;
+  flex-direction: row;
+  width: 150px;
+}
+
+section .row .square {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  transition: 0.3s background-color ease-in;
+}
+
+section .row .square:disabled {
+  background-color: transparent !important;
+  cursor: auto !important;
+}
+
+section .row .square:hover {
+  background-color: rgb(185, 184, 184);
+  cursor: pointer;
+}
+
+.border-y {
+  border: none !important;
+  border-left: 1px solid rgb(185, 184, 184) !important;
+  border-right: 1px solid rgb(185, 184, 184) !important;
+}
+
+.border-x {
+  border: none !important;
+  border-top: 1px solid rgb(185, 184, 184) !important;
+  border-bottom: 1px solid rgb(185, 184, 184) !important;
+}
+
+.border {
+  border: 1px solid rgb(185, 184, 184) !important;
+}
+
+section .row .square span {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}

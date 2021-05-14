@@ -1,0 +1,13 @@
+<div class="player-info">
+  <div id="statusArea" className="status">Next player <span>{{player}}</span></div>
+  <div id="winnerArea" className="winner">Winner <span>{{winner}}</span></div>
+</div>
+<button (click)="resetGame()" id="reset">Reset</button>
+<section>
+  <div *ngIf="currentGame" class="row">
+    <button *ngFor="let game of currentGame" 
+    (click)="turn(game['id'], game['pickedValue'])"
+    [ngClass]="game['styles']"
+    [disabled]="game['player'] != '' || !gameStatus"> <span> {{game['player']}} </span> </button>
+  </div>
+</section>
