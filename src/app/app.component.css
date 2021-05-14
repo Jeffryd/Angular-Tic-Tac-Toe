@@ -52,6 +52,7 @@ section .row .square {
   width: 50px;
   height: 50px;
   background-color: transparent;
+  vertical-align: middle;
   border: none;
   transition: 0.3s background-color ease-in;
 }
@@ -84,6 +85,6 @@ section .row .square:hover {
 
 section .row .square span {
   display: inline-block;
-  position: relative;
+  position: static;
   width: 100%;
 }
